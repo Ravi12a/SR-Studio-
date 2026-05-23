@@ -1,0 +1,6 @@
+{
+  "name": "SR Studio",
+  "description": "A premium modern website for SR Studio, a creative digital agency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

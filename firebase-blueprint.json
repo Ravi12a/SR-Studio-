@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Subscriber": {
+      "title": "Subscriber",
+      "description": "A user subscribed to the newsletter.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "The user's email address."
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "The timestamp of subscription."
+        }
+      },
+      "required": ["email", "createdAt"]
+    }
+  },
+  "firestore": {
+    "subscribers/{subscriberId}": {
+      "schema": {
+        "$ref": "#/entities/Subscriber"
+      },
+      "description": "Newsletter subscribers."
+    }
+  }
+}
