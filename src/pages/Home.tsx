@@ -21,7 +21,7 @@ export default function Home() {
       <SEO 
         title="SR Studio | Premium Creative Digital Agency in India"
         description="SR Studio helps businesses grow with premium websites, branding, UI/UX design, and modern digital experiences. Top-rated website design agency in India."
-        canonicalUrl="https://srstudio.in/"
+        canonicalUrl="https://sr-studio.in/"
         schema={[organizationSchema, websiteSchema, faqSchema, localBusinessSchema("India")]}
       />
       <Navbar />

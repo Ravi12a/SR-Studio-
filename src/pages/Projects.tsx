@@ -26,7 +26,7 @@ export default function Projects() {
       <SEO 
         title="Featured Work & Portfolio | SR Studio"
         description="View SR Studio's curated selection of premium projects across website development, branding, UI/UX, and graphic design."
-        canonicalUrl="https://srstudio.in/projects"
+        canonicalUrl="https://sr-studio.in/projects"
       />
       <Navbar />
       

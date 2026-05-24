@@ -31,7 +31,7 @@ export default function Location() {
       <SEO 
         title={pageTitle}
         description={pageDesc}
-        canonicalUrl={`https://srstudio.in/locations/${city.toLowerCase()}`}
+        canonicalUrl={`https://sr-studio.in/locations/${city.toLowerCase()}`}
         schema={[organizationSchema, localBusinessSchema(cityName)]}
       />
       <Navbar />

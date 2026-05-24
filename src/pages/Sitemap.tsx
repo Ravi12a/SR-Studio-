@@ -15,7 +15,7 @@ export default function HTMLSitemap() {
       <SEO 
         title="HTML Sitemap | SR Studio" 
         description="Navigate to all core pages, services, and local city web design service pages of SR Studio."
-        canonicalUrl="https://srstudio.in/sitemap"
+        canonicalUrl="https://sr-studio.in/sitemap"
         schema={websiteSchema}
       />
       <Navbar />

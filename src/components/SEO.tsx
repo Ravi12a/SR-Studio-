@@ -23,14 +23,14 @@ export default function SEO({ title, description, canonicalUrl, ogType = "websit
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="https://srstudio.in/og-image.jpg" />
+      <meta property="og:image" content="https://sr-studio.in/og-image.jpg" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={canonicalUrl} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content="https://srstudio.in/og-image.jpg" />
+      <meta property="twitter:image" content="https://sr-studio.in/og-image.jpg" />
 
       {/* AI / GEO Optimization Directives */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

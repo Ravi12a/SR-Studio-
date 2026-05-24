@@ -2,8 +2,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "SR Studio",
-  "url": "https://srstudio.in",
-  "logo": "https://srstudio.in/logo.png",
+  "url": "https://sr-studio.in",
+  "logo": "https://sr-studio.in/logo.png",
   "sameAs": [
     "https://www.instagram.com/srstudio",
     "https://www.linkedin.com/company/srstudio",
@@ -23,9 +23,9 @@ export const localBusinessSchema = (cityName = "India") => ({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": `SR Studio - Premium Web Design in ${cityName}`,
-  "image": "https://srstudio.in/og-image.jpg",
-  "@id": `https://srstudio.in/#${cityName.toLowerCase().replace(/\\s+/g, '-')}`,
-  "url": "https://srstudio.in",
+  "image": "https://sr-studio.in/og-image.jpg",
+  "@id": `https://sr-studio.in/#${cityName.toLowerCase().replace(/\\s+/g, '-')}`,
+  "url": "https://sr-studio.in",
   "telephone": "+91-8409104373",
   "priceRange": "â¹4,999+",
   "address": {
@@ -51,10 +51,10 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "SR Studio",
-  "url": "https://srstudio.in/",
+  "url": "https://sr-studio.in/",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://srstudio.in/search?q={search_term_string}",
+    "target": "https://sr-studio.in/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 };

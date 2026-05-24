@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sr-studio.in/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sr-studio.in/projects</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/sitemap</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <!-- Local SEO Pages -->
+  <url><loc>https://sr-studio.in/locations/delhi</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/mumbai</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/bangalore</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/hyderabad</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/pune</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/kolkata</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/patna</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/chennai</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/ahmedabad</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sr-studio.in/locations/jaipur</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+</urlset>
