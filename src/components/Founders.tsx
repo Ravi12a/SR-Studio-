@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Linkedin, Twitter, Dribbble } from 'lucide-react';
+import { getOptimizedUrl } from '../utils/image';
 
 const founders = [
   {
@@ -61,7 +62,7 @@ export default function Founders() {
               <div className="relative h-full glass rounded-3xl p-8 flex flex-col items-center text-center items-stretch hover:-translate-y-2 transition-transform duration-500 group-hover:border-white/20">
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 border border-white/10 p-1 relative z-10">
                   <div className="w-full h-full rounded-full overflow-hidden filter grayscale group-hover:grayscale-0 transition-all duration-500">
-                    <img src={founder.image} alt={founder.name} className="w-full h-full object-cover" />
+                    <img src={getOptimizedUrl(founder.image, 400)} alt={founder.name} className="w-full h-full object-cover" />
                   </div>
                 </div>
                 

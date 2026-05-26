@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import { useImageModal } from '../context/ImageModalContext';
+import { getOptimizedUrl } from '../utils/image';
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -81,9 +82,9 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
                 
                 <ProgressiveImage 
-                  src={project.image} 
+                  src={getOptimizedUrl(project.image, project.size === 'large' ? 1200 : 800)} 
                   alt={project.title} 
-                  placeholderSrc={(project as any).placeholder}
+                  placeholderSrc={(project as any).placeholder ? getOptimizedUrl((project as any).placeholder, 50) : undefined}
                   imageClassName="transform scale-100 group-hover:scale-105" 
                 />
                 

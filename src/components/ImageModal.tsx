@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 import { useImageModal } from '../context/ImageModalContext';
+import { getOptimizedUrl } from '../utils/image';
 
 export default function ImageModal() {
   const { isImageModalOpen, currentImage, closeImageModal } = useImageModal();
@@ -52,7 +53,7 @@ export default function ImageModal() {
             </button>
 
             <img
-              src={currentImage.src}
+              src={getOptimizedUrl(currentImage.src, 1920)}
               alt={currentImage.alt}
               className="w-full h-full object-contain max-h-[85vh] rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10"
             />

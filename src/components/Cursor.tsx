@@ -4,6 +4,11 @@ import { motion } from 'motion/react';
 export default function Cursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -24,6 +29,8 @@ export default function Cursor() {
       document.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, [hidden]);
+
+  if (!isMounted) return null;
 
   return (
     <>

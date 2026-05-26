@@ -5,6 +5,7 @@ import ProgressiveImage from './ProgressiveImage';
 import { Link } from 'react-router-dom';
 import { projects, projectCategories as categories } from '../data/projects';
 import { useImageModal } from '../context/ImageModalContext';
+import { getOptimizedUrl } from '../utils/image';
 
 export default function FeaturedWork() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -74,9 +75,9 @@ export default function FeaturedWork() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
                 
                 <ProgressiveImage 
-                  src={project.image} 
+                  src={getOptimizedUrl(project.image, project.size === 'large' ? 1200 : 800)} 
                   alt={project.title} 
-                  placeholderSrc={(project as any).placeholder}
+                  placeholderSrc={(project as any).placeholder ? getOptimizedUrl((project as any).placeholder, 50) : undefined}
                   imageClassName="transform scale-100 group-hover:scale-105" 
                 />
                 
