@@ -7,7 +7,14 @@ import './index.css';
 
 const rootElement = document.getElementById('root')!;
 
-if (rootElement.hasChildNodes()) {
+const hasActualContent = rootElement.hasChildNodes() && 
+  !(rootElement.childNodes.length === 1 && rootElement.firstChild?.nodeType === Node.COMMENT_NODE);
+
+if (typeof document !== 'undefined') {
+  document.addEventListener("touchstart", function() {}, {passive: true});
+}
+
+if (hasActualContent) {
   hydrateRoot(
     rootElement,
     <StrictMode>

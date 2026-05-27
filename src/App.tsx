@@ -26,10 +26,9 @@ function AppContent() {
     <>
       <Cursor />
       
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
+      <div
+        className="app-entry"
+        style={{ animation: 'fadeIn 1s ease-in-out 0.2s both' }}
       >
         <Routes>
           <Route path="/" element={<Home />} />
@@ -37,7 +36,7 @@ function AppContent() {
           <Route path="/locations/:city" element={<Location />} />
           <Route path="/sitemap" element={<Sitemap />} />
         </Routes>
-      </motion.div>
+      </div>
       <ContactModal />
     </>
   );

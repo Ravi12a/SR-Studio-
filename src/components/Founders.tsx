@@ -55,7 +55,8 @@ export default function Founders() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              className="group relative"
+              className="group relative cursor-pointer"
+              tabIndex={0}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-white/5 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
               

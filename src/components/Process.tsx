@@ -38,7 +38,7 @@ export default function Process() {
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 className="relative text-center lg:text-left flex flex-col items-center lg:items-start"
               >
-                <div className="w-24 h-24 rounded-full bg-background border border-white/10 flex items-center justify-center font-display text-2xl font-bold mb-6 relative group">
+                <div className="w-24 h-24 rounded-full bg-background border border-white/10 flex items-center justify-center font-display text-2xl font-bold mb-6 relative group cursor-pointer" tabIndex={0}>
                   <div className="absolute inset-0 rounded-full border border-white/20 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500"></div>
                   {step.num}
                 </div>

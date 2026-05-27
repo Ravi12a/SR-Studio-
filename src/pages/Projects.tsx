@@ -77,7 +77,8 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
-                className={`group cursor-pointer ${project.size === 'large' ? 'md:col-span-2 aspect-[2/1]' : 'aspect-square md:aspect-[4/5]'} overflow-hidden rounded-3xl relative block`}
+                className={`group cursor-pointer ${project.size === 'large' ? 'md:col-span-2 aspect-[2/1]' : 'aspect-square md:aspect-[4/5]'} overflow-hidden rounded-3xl relative block focus:outline-none`}
+                tabIndex={0}
               >
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
                 

@@ -53,7 +53,8 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative p-[1px] rounded-3xl overflow-hidden bg-white/5 hover:bg-transparent transition-colors duration-500"
+              className="group relative p-[1px] rounded-3xl overflow-hidden bg-white/5 hover:bg-transparent transition-colors duration-500 cursor-pointer"
+              tabIndex={0}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative h-full bg-surface p-8 rounded-[23px] flex flex-col items-start gap-6 border border-white/5 group-hover:border-transparent transition-colors duration-500">

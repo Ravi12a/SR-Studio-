@@ -85,9 +85,10 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              className={`group relative glass rounded-[2rem] p-8 md:p-10 flex flex-col h-full bg-background/40 hover:-translate-y-2 transition-transform duration-500
+              className={`group relative glass rounded-[2rem] p-8 md:p-10 flex flex-col h-full bg-background/40 hover:-translate-y-2 transition-transform duration-500 cursor-pointer focus:outline-none
                 ${plan.popular ? 'border-white/20 md:-mt-8 shadow-2xl shadow-white/5' : 'border-white/5 hover:border-white/10'}
               `}
+              tabIndex={0}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
